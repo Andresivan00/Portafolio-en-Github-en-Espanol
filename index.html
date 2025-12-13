@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la web responsive -->
+    <title>Mi Portafolio Personal</title>
+    
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome (iconos de redes sociales y enlaces) -->
+    <!-- IMPORTANTE: Ve a https://fontawesome.com, crea tu kit gratuito y pega aquí tu código -->
+    <script src="https://kit.fontawesome.com/tu-kit-id.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- ==================== HEADER (barra de navegación fija) ==================== -->
+    <header>
+        <nav id="nav-bar">
+            <!-- Logo / Nombre -->
+            <div class="logo">Iván Andrés<span>Olivera</span></div>
+            
+            <!-- Menú de navegación -->
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
+    <main>
+        <!-- ==================== SECCIÓN INICIO / HERO ==================== -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <!-- Texto de presentación -->
+                <div class="hero-text">
+                    <h1>Iván Andrés</h1>
+                    <h2>Desarrollador Web Junior</h2>
+                    <p>Soy estudiante con formación de Tecnico de Desarrollo de Software con formación en desarrollo Frontend y Backend. Mi enfoque se basa en elaborar propuestas gráficas que respondan a las necesidades del cliente y a los requerimientos del mercado.</p>
+                    
+                    <!-- Redes sociales -->
+                    <div class="social-links">
+                        <a href="https://github.com/tuusuario" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/tuusuario" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/tuusuario" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/tuusuario" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    
+                    <!-- Botón de contacto -->
+                    <a href="mailto:tuemail@gmail.com" class="btn">Contáctame</a>
+                </div>
+
+                <!-- Foto de perfil -->
+                <div class="hero-image">
+                    <img src="Archivos/Imagenes/Imagendeperfil.png" alt="Foto de perfil">
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECCIÓN EXPERIENCIA (timeline) ==================== -->
+        <section id="experiencia" class="experiencia">
+            <h2 class="section-title">Work Experience</h2>
+            
+            <div class="timeline">
+                <!-- Cada trabajo es un "timeline-item" -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="date">2022 - Actualidad</span>
+                        <h3>Profesional en Diseño Grafico</h3>
+                        <h4>Universidad del Norte</h4>
+                        <p>Desarrollo de páginas web atractivas utilizando HTML, CSS y JavaScript.</p>
+                        <ul class="skills">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Bootstrap 5</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="date">2025 - Actualidad</span>
+                        <h3>Estudiante de Desarrollo de Software</h3>
+                        <h4>Universidad de la Costa</h4>
+                        <p>Desarrollo de APIs y lógica del servidor.</p>
+                        <ul class="skills">
+                            <li>Python</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Visual Studio Code</li>
+                            <li>Google Colab</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Puedes añadir más trabajos copiando el bloque anterior -->
+            </div>
+        </section>
+        <!--<a href="#" target="_blank"><i class="fas fa-link"></i> Demo</a>-->
+
+        <!-- ==================== SECCIÓN PROYECTOS BACKENDS ==================== -->
+        <section id="proyectos" class="projects">
+            <h2 class="section-title">Proyectos de Backend</h2>
+            
+            <div class="project-container">
+                <!-- Cada proyecto es una tarjeta -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Archivos/Diseños finales/En español/Calculadora-de-Impuestos-y-Subsidios-Sociales.png" alt="Proyecto 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Calculadora de Impuestos y Subsidios</h3>
+                        <p>¡Un programa inteligente que simula cómo funciona el sistema tributario y de subsidios en Colombia según tu ingreso, edad y personas a cargo!</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Visual Studio Code</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Andresivan00/Calculadora-de-Impuestos-y-Subsidios-Sociales/blob/main/README-ESP.md" target="_blank"><i class="fab fa-github"></i>Demo del código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repite el bloque anterior para cada proyecto -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Archivos/Diseños finales/En español/Gestión de Estudiantes con Menú Interactivo.png" alt="Proyecto 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Gestión de Estudiantes con Menú Interactivo</h3>
+                        <p>Programa sencillo y educativo en Python puro que permite gestionar una lista de estudiantes desde la consola mediante un menú interactivo.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Visual Studio Code</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Andresivan00/Menu-de-gestion-de-estudiantes/blob/main/README-ESP.md" target="_blank"><i class="fab fa-github"></i>Demo del código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Archivos/Diseños finales/En español/Fracciones con Clases Abstractas.png" alt="Proyecto 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Fracciones con Clases Abstractas</h3>
+                        <p>Ejemplo educativo de Programación Orientada a Objetos que implementa una clase Fraccion capaz de realizar las cuatro operaciones básicas (+, −, ×, ÷) utilizando una clase abstracta (Numerica) con @abstractmethod.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Visual Studio Code</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Andresivan00/Fracciones-con-Clases-Abstractas-en-Python/blob/main/README-ESP.md" target="_blank"><i class="fab fa-github"></i>Demo del código</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title"></h2>
+            <div class="project-container">
+                <!-- Cada proyecto es una tarjeta -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Archivos/Diseños finales/En español/Cálculo de Áreas con Polimorfismo.png" alt="Proyecto 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Cálculo de Áreas con Polimorfismo</h3>
+                        <p>Ejemplo educativo y limpio de Programación Orientada a Objetos que muestra cómo usar herencia y polimorfismo para calcular el área de diferentes figuras geométricas con el mismo método.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Visual Studio Code</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Andresivan00/Calculo-de-areas-con-Polimorfismo-en-Python/blob/main/README-ESP.md" target="_blank"><i class="fab fa-github"></i>Demo del código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repite el bloque anterior para cada proyecto -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Archivos/Diseños finales/En español/Registro de Mascotas con Herencia y Polimorfismo.png" alt="Proyecto 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Registro de Mascotas con Herencia y Polimorfismo</h3>
+                        <p>Programa interactivo educativo que permite registrar perros o gatos usando Programación Orientada a Objetos (POO) con herencia múltiple y polimorfismo.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Visual Studio Code</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Andresivan00/Registro-de-Mascotas-con-Herencia-y-Polimorfismo-en-Python/blob/main/README-ESP.md" target="_blank"><i class="fab fa-github"></i>Demo del código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Archivos/Diseños finales/En español/Calculadora Simple con Clases.png" alt="Proyecto 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Calculadora Simple con Clases</h3>
+                        <p>Ejemplo educativo y 100% funcional de Programación Orientada a Objetos que crea una clase Calculator para realizar las 4 operaciones básicas: suma, resta, multiplicación y división.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Visual Studio Code</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Andresivan00/Calculadora-Simple-con-Clase-en-Python-POO/blob/main/README-ESP.md" target="_blank"><i class="fab fa-github"></i>Demo del código</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Archivos/Diseños finales/En español/Clase Automovil con Encapsulamiento.png" alt="Proyecto 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Clase Automóvil con Encapsulamiento, Getters/Setters y Métodos</h3>
+                        <p>Ejemplo educativo completo de *Programación Orientada a Objetos* que simula un automóvil con todos sus atributos y comportamientos reales.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Visual Studio Code</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Andresivan00/Clase-Automovil-con-POO-con-Encapsulamiento-GettersSetters-y-Metodos/blob/main/README-ESP.md" target="_blank"><i class="fab fa-github"></i>Demo del código</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Archivos/Diseños finales/En español/Clase Persona con Cálculo de Edad en Tiempo Real.png" alt="Proyecto 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Clase Persona con Cálculo de Edad en Tiempo Real</h3>
+                        <p>Ejemplo educativo y funcional de Programación Orientada a Objetos que crea una clase Persona capaz de almacenar datos personales y calcular automáticamente la edad actual usando la fecha del sistema.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Visual Studio Code</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="-https://github.com/Andresivan00/Clase-Persona-con-Calculo-de-Edad-en-Tiempo-Real-Python-datetime/blob/main/README-ESP.md" target="_blank"><i class="fab fa-github"></i>Demo del código</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Archivos/Diseños finales/En español/Sistema de Cuentas Bancarias con Herencia.png" alt="Proyecto 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Sistema de Cuentas Bancarias con Herencia</h3>
+                        <p>Ejemplo educativo y 100% funcional de Programación Orientada a Objetos que simula dos tipos de cuentas bancarias usando herencia y sobreescritura de métodos.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Visual Studio Code</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Andresivan00/Sistema-de-Cuentas-Bancarias-con-Herencia-en-Python-POO/blob/main/README-ESP.md" target="_blank"><i class="fab fa-github"></i>Demo del código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Archivos/Diseños finales/En español/Colección Completa de 11.png" alt="Proyecto 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Colección Completa de 11 Ejercicios de Matrices y Listas</h3>
+                        <p>El repositorio definitivo para aprender a trabajar con matrices (listas de listas), menús interactivos, algoritmos clásicos y estructura de código limpio en Python.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Visual Studio Code</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Andresivan00/Coleccion-Completa-de-11-Ejercicios-de-Matrices-y-Listas-en-Python/blob/main/README-ESP.md" target="_blank"><i class="fab fa-github"></i>Demo del código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Archivos/Diseños finales/En español/Separador de Números P.png" alt="Proyecto 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Separador de Números Pares e Impares en un Vector</h3>
+                        <p>Programa educativo que resuelve 3 ejercicios típicos de matrices usando listas de listas y números aleatorios. Ideal para aprender a trabajar con matrices en Python.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Visual Studio Code</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Andresivan00/Separador-de-Numeros-Pares-e-Impares-en-un-Vector-Python/blob/main/README-ESP.md" target="_blank"><i class="fab fa-github"></i>Demo del código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Archivos/Diseños finales/En español/Matriz 4x4 Interactiva – Sumas de Filas.png" alt="Proyecto 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Matriz 4x4 Interactiva – Sumas de Filas, Columnas y Diagonales</h3>
+                        <p>Ejemplo educativo y 100% funcional de Programación Orientada a Objetos que simula dos tipos de cuentas bancarias usando herencia y sobreescritura de métodos.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Visual Studio Code</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Andresivan00/Matriz-4x4-Interactiva-Sumas-de-Filas-Columnas-y-Diagonales-Python/blob/main/README-ESP.md" target="_blank"><i class="fab fa-github"></i>Demo del código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Archivos/Diseños finales/En español/Operaciones Completas con Matrices CD.png" alt="Proyecto 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Operaciones Completas con Matrices Cuadradas Aleatorias</h3>
+                        <p>Programa educativo que genera dos matrices cuadradas A y B de tamaño aleatorio (3×3 a 6×6), y realiza todas las operaciones clásicas de álgebra de matrices.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Visual Studio Code</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Andresivan00/Operaciones-Completas-con-Matrices-Cuadradas-Aleatorias-Python/blob/main/README-ESP.md" target="_blank"><i class="fab fa-github"></i>Demo del código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Archivos/Diseños finales/En español/Creacion y suma de Matrices con N.png" alt="Proyecto 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Creacion y suma de Matrices con Numeros Aleatorios</h3>
+                        <p>Programa educativo con tres ejercicios fundamentales para aprender a trabajar con matrices (listas de listas) en Python usando números aleatorios.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Visual Studio Code</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Andresivan00/Creacion-y-suma-de-Matrices-con-Numeros-Aleatorios-Python/blob/main/README-ESP.md" target="_blank"><i class="fab fa-github"></i>Demo del código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Archivos/Diseños finales/En español/Creador de promps.png" alt="Proyecto 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Creador de promps automatico</h3>
+                        <p>App de diseño e implementación de una aplicación gráfica creada en Python mediante la librería Tkinter. El propósito principal del proyecto es permitir al usuario generar prompts coherentes y descriptivos, basados en una serie de categorías, estilos e iluminaciones predefinidas.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Visual Studio Code</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Andresivan00/Creador-de-promps-automatico-con-Python/blob/main/README-ESP.md" target="_blank"><i class="fab fa-github"></i>Demo del código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Archivos/Diseños finales/En español/Sistema de Control de Gastos P.png" alt="Proyecto 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Sistema de Control de Gastos Personales con Persistencia JSON/CSV</h3>
+                        <p>¡El sistema más completo, profesional y educativo para controlar tus finanzas personales que vas a encontrar hecho por un estudiante!</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Visual Studio Code</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Andresivan00/Sistema-de-Control-de-Gastos-Personales-con-Persistencia-JSON-CSV-en-Python/blob/main/README-ESP.md" target="_blank"><i class="fab fa-github"></i>Demo del código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Archivos/Diseños finales/En español/Presupuesto Mensual Inteligente - Control de G.png" alt="Proyecto 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Presupuesto Mensual Inteligente - Control de Gastos Personales</h3>
+                        <p>¡El programa más útil y bonito que vas a tener para organizar tu plata todos los meses y aprender a ahorrar de verdad!</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Visual Studio Code</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Andresivan00/Presupuesto-Mensual-Inteligente-Asesor-Financiero-Personal-Python/blob/main/README-ESP.md" target="_blank"><i class="fab fa-github"></i>Demo del código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Archivos/Diseños finales/En español/Procesamiento de Archivos TXT y An.png" alt="Proyecto 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Visualizaciones de Datos con Matplotlib y Seaborn en Python</h3>
+                        <p>Programa educativo con *3 ejemplos prácticos* de gráficos para analizar datos usando *Pandas, Matplotlib y Seaborn*. Ideal para aprender visualización de datos de forma simple y efectiva.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Google colab</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Andresivan00/Visualizaciones_de_Datos_con_Matplotlib_y_Seaborn/blob/main/README-ESP.md" target="_blank"><i class="fab fa-github"></i>Demo del código</a>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
+
+        <!-- ==================== SECCIÓN PROYECTOS DE FRONTENDS ==================== -->
+        <section id="proyectos" class="projects">
+            <h2 class="section-title">Proyectos de Frontend</h2>
+            
+            <div class="project-container">
+                <!-- Cada proyecto es una tarjeta -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Archivos/Diseños finales/En español/BarranquillaMotors – Página Web.png" alt="Proyecto 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>BarranquillaMotors – Página Web de Repuestos Automotrices</h3>
+                        <p>¡Una página web moderna, elegante y 100% responsive para una tienda de repuestos de autos en Barranquilla, hecha con HTML puro y Bootstrap 5!</p>
+                        <div class="project-tech">
+                            <span>Html 5</span>
+                            <span>CSS 3</span>
+                            <span>Bootstrap 5</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.behance.net/gallery/216616799/BarranquillaMotors-Web-Design" target="_blank"><i class="fab fa-link"></i>Proyecto en Behance</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repite el bloque anterior para cada proyecto -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Archivos/Diseños finales/En español/Game Store – Tienda de Videojuegos Online.png" alt="Proyecto 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Game Store – Tienda de Videojuegos Online</h3>
+                        <p>¡Una página web moderna, elegante y 100% responsive para vender videojuegos, hecha con HTML puro y CSS personalizado (sin frameworks pesados)!</p>
+                        <div class="project-tech">
+                            <span>Html 5</span>
+                            <span>CSS 3</span>
+                            <span>Bootstrap 5</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.behance.net/gallery/216616261/Games-Store-Web-Design" target="_blank"><i class="fab fa-link"></i>Proyecto en Behance</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repite el bloque anterior para cada proyecto -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Archivos/Diseños finales/En español/Pagina Web de noticias de Futbol - Infootbal.png" alt="Proyecto 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Pagina Web de noticias de Futbol - Infootbal</h3>
+                        <p>El sitio web Infootbal tiene como objetivo ser una plataforma completa y actualizada que cubra todos los aspectos del fútbol europeo. </p>
+                        <div class="project-tech">
+                            <span>Figma</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.behance.net/gallery/201160529/Web-Design-Infootbal-Website" target="_blank"><i class="fab fa-link"></i>Proyecto en Behance</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repite el bloque anterior para cada proyecto -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Archivos/Diseños finales/En español/Pagina Web de Tienda Tecnologica - TechShop.png" alt="Proyecto 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Pagina Web de Tienda Tecnologica - TechShop</h3>
+                        <p>Techshop es una tienda especializada en la venta de ordenadores gaming, componentes de PC y periféricos dirigida a distintos sectores, incluyendo el profesional, empresarial, educativo y gaming.</p>
+                        <div class="project-tech">
+                            <span>Figma</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.behance.net/gallery/199164367/Ejercicio-de-diseno-web-tienda-de-tecnologia" target="_blank"><i class="fab fa-link"></i>Proyecto en Behance</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Iván Andrés Olivera - Todos los derechos reservados</p>
+            <!-- Mismas redes sociales que arriba -->
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
